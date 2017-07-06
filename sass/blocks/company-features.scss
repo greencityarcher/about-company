@@ -1,0 +1,75 @@
+.company-features{
+  margin-top: 10px;
+}
+
+.company-features::after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+
+.company-features__item{
+width: 50%;
+min-width:300px;
+min-height: 65px;
+box-sizing: border-box;
+position: relative;
+float: left;
+padding-left: 77px;
+padding-right: 10px;
+margin-bottom: 20px;
+}
+
+.company-features__icon{
+  position: absolute;
+  width: 77px;
+  height: 65px;
+  top:0;
+  left: 0;
+  float: left;
+}
+
+.company-features__icon::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-repeat: no-repeat;
+}
+
+.company-features__icon--assortiment::before{
+  width: 59px;
+  height: 60px;
+  background-image: svg-load('../icons/003-wine.svg');
+}
+
+.company-features__icon--quality::before{
+  width: 51px;
+  height: 61px;
+  background-image: svg-load('../icons/001-quality-1.svg');
+}
+
+
+.company-features__icon--discount::before{
+  width: 47px;
+  height: 65px;
+  background-image: svg-load('../icons/006-placeholder.svg');
+}
+
+.company-features__icon--calendar::before{
+  width: 56px;
+  height: 56px;
+  background-image: svg-load('../icons/012-calendar.svg');
+}
+
+.company-features__f-name{
+  display: block;
+}
+
+.company-features__f-desc{
+  display: block;
+}

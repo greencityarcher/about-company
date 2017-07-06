@@ -1,0 +1,20 @@
+.promo-about{
+  position: relative;
+  height: 329px;
+  margin-bottom: 23px;
+  background: #ede6f2 url("/images/promo-about-bcg.png");
+  background-size: cover;
+}
+.promo-about__header{
+  position: absolute;
+  display: block;
+  top: 20px;
+  left: 28px;
+  max-width: 480px;
+  font-family: "CirceBold", Arial, sans-serif;
+
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 46px;
+}
