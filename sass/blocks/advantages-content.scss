@@ -1,0 +1,98 @@
+.advantages-content {
+  margin-top: 20px;
+
+  &::after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+  }
+
+  &__row {
+    &::after {
+      visibility: hidden;
+      display: block;
+      content: "";
+      clear: both;
+      height: 0;
+    }
+  }
+
+  &__item {
+    width: 50%;
+    min-width: 300px;
+    min-height: 65px;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    padding-left: 77px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
+
+  &__item:nth-child(even) {
+    margin-left: 8px;
+    width: calc(50% - 8px);
+  }
+
+  &__icon {
+    position: absolute;
+    width: 60px;
+    height: 65px;
+    top: 0;
+    left: 0;
+    float: left;
+  }
+
+  &__icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+  }
+
+  &__icon--assortiment::before {
+    width: 59px;
+    height: 60px;
+    background-image: svg-load('../icons/003-wine.svg');
+  }
+
+  &__icon--quality::before {
+    width: 51px;
+    height: 61px;
+    background-image: svg-load('../icons/001-quality-1.svg');
+  }
+
+  &__icon--discount::before {
+    width: 47px;
+    height: 65px;
+    background-image: svg-load('../icons/006-placeholder.svg');
+  }
+
+  &__icon--calendar::before {
+    width: 56px;
+    height: 56px;
+    background-image: svg-load('../icons/012-calendar.svg');
+  }
+
+  &__f-name {
+    display: block;
+    font-weight: bold;
+    margin-top: -5px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  &__f-desc {
+    display: block;
+    font-weight: normal;
+    max-width: 210px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
